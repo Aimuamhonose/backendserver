@@ -36,7 +36,7 @@ let transporter = nodemailer.createTransport({
   });
 
 app.post('/submit-form', (req, res) => {
-    console.log(req.headers);
+    console.log('Received form data:', req.body);
     const formData = req.body;
 
     // Customize these settings
