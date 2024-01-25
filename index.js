@@ -71,7 +71,7 @@ app.post('/submit-form', (req, res) => {
     });
 
     // Include the redirect URL in the response
-    res.sendStatus(200);
+    res.redirect('/user/redirect.html');
 });
 
 // app.get('/get', (req, res) => {
